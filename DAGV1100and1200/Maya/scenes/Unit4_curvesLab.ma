@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Unit4_curvesLab.ma
-//Last modified: Fri, Feb 06, 2026 08:54:59 PM
+//Last modified: Fri, Feb 06, 2026 09:07:47 PM
 //Codeset: UTF-8
 requires maya "2026";
 requires "mtoa" "5.5.4.2";
@@ -10,17 +10,17 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202510291147-60ec9eda33";
 fileInfo "osv" "Mac OS X 20.2";
-fileInfo "UUID" "67877855-184D-5540-C4DC-BE971CD90893";
+fileInfo "UUID" "939F53F3-1D47-9E7D-1279-6DB1BAA42792";
 createNode transform -s -n "persp";
 	rename -uid "0AE0D5D6-6440-3CB8-CF88-02AFFD70B3BE";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 9.9412477716944174 4.6392936616084572 -14.628101879521832 ;
-	setAttr ".r" -type "double3" -12.338352729583056 505.79999999996284 0 ;
+	setAttr ".t" -type "double3" 15.740983586613194 9.3792363200404179 -10.697561398791489 ;
+	setAttr ".r" -type "double3" -24.338352729572435 484.19999999992143 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "1269B48A-734D-4DD5-A0AF-49B56C312312";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 18.104595267441859;
+	setAttr ".coi" 20.888383724838082;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -69,7 +69,7 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".coi" 1000.1;
-	setAttr ".ow" 30;
+	setAttr ".ow" 31.922001930702042;
 	setAttr ".imn" -type "string" "side";
 	setAttr ".den" -type "string" "side_depth";
 	setAttr ".man" -type "string" "side_mask";
