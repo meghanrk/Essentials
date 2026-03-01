@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: table.chair.mav3
-//Last modified: Sun, Mar 01, 2026 01:25:26 PM
+//Last modified: Sun, Mar 01, 2026 02:00:43 PM
 //Codeset: UTF-8
 file -rdi 1 -rpr "table" -rfn "tableRN" -op "v=0;" -typ "mayaAscii" "/Users/megha/Projects/Essentials/DAGV1100and1200/Maya//assets/table.ma";
 file -rdi 1 -rpr "chair" -rfn "chairRN" -op "v=0;" -typ "mayaAscii" "/Users/megha/Projects/Essentials/DAGV1100and1200/Maya//assets/chair.ma";
@@ -11,6 +11,7 @@ file -rdi 1 -rpr "book1" -rfn "book1RN" -op "v=0;" -typ "mayaAscii" "/Users/megh
 file -rdi 1 -rpr "books3" -rfn "books3RN" -op "v=0;" -typ "mayaAscii" "/Users/megha/Projects/Essentials/DAGV1100and1200/Maya//assets/books3.ma";
 file -rdi 1 -rpr "books3" -rfn "books3RN1" -op "v=0;" -typ "mayaAscii" "/Users/megha/Projects/Essentials/DAGV1100and1200/Maya//assets/books3.ma";
 file -rdi 1 -rpr "couch" -rfn "couchRN" -op "v=0;" -typ "mayaAscii" "/Users/megha/Projects/Essentials/DAGV1100and1200/Maya/scenes//couch.ma";
+file -rdi 1 -rpr "bowl" -rfn "bowlRN" -op "v=0;" -typ "mayaAscii" "/Users/megha/Projects/Essentials/DAGV1100and1200/Maya/assets/bowl.ma";
 file -r -rpr "table" -dr 1 -rfn "tableRN" -op "v=0;" -typ "mayaAscii" "/Users/megha/Projects/Essentials/DAGV1100and1200/Maya//assets/table.ma";
 file -r -rpr "chair" -dr 1 -rfn "chairRN" -op "v=0;" -typ "mayaAscii" "/Users/megha/Projects/Essentials/DAGV1100and1200/Maya//assets/chair.ma";
 file -r -rpr "chair" -dr 1 -rfn "chairRN1" -op "v=0;" -typ "mayaAscii" "/Users/megha/Projects/Essentials/DAGV1100and1200/Maya//assets/chair.ma";
@@ -19,6 +20,7 @@ file -r -rpr "book1" -dr 1 -rfn "book1RN" -op "v=0;" -typ "mayaAscii" "/Users/me
 file -r -rpr "books3" -dr 1 -rfn "books3RN" -op "v=0;" -typ "mayaAscii" "/Users/megha/Projects/Essentials/DAGV1100and1200/Maya//assets/books3.ma";
 file -r -rpr "books3" -dr 1 -rfn "books3RN1" -op "v=0;" -typ "mayaAscii" "/Users/megha/Projects/Essentials/DAGV1100and1200/Maya//assets/books3.ma";
 file -r -rpr "couch" -dr 1 -rfn "couchRN" -op "v=0;" -typ "mayaAscii" "/Users/megha/Projects/Essentials/DAGV1100and1200/Maya/scenes//couch.ma";
+file -r -rpr "bowl" -dr 1 -rfn "bowlRN" -op "v=0;" -typ "mayaAscii" "/Users/megha/Projects/Essentials/DAGV1100and1200/Maya/assets/bowl.ma";
 requires maya "2026";
 requires -nodeType "materialxStack" -nodeType "MaterialXSurfaceShader" -dataType "MxDocumentStackData"
 		 "LookdevXMaya" "1.10.0";
@@ -29,12 +31,12 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202510291147-60ec9eda33";
 fileInfo "osv" "Mac OS X 20.3";
-fileInfo "UUID" "73FF1ED8-6546-912E-846D-51851291DF20";
+fileInfo "UUID" "2D02B920-734A-93EC-6865-869B94920A6F";
 createNode transform -s -n "persp";
 	rename -uid "6DB37E52-6F46-7C27-F8E6-B88D37EEA211";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -11.537424886117201 13.414677549253708 -9.3077449208807135 ;
-	setAttr ".r" -type "double3" -30.33835273496252 237.00000000000486 0 ;
+	setAttr ".t" -type "double3" -11.714934184717141 31.839165926175728 -12.367552134948237 ;
+	setAttr ".r" -type "double3" -54.338352734955734 224.19999999998421 0 ;
 	setAttr ".rp" -type "double3" 1.4210854715202004e-16 0 0 ;
 	setAttr ".rpt" -type "double3" -1.0724827093846768e-16 7.8886090522101182e-33 1.3776647021671398e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
@@ -44,12 +46,12 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".ncp" 0.001;
 	setAttr ".fcp" 100;
 	setAttr ".fd" 0.05;
-	setAttr ".coi" 15.891458773395057;
+	setAttr ".coi" 30.628371863675103;
 	setAttr ".ow" 0.1;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 1.22639161352663 1500.0004469308597 841.85008927934291 ;
+	setAttr ".tp" -type "double3" 1.7093184344725127 655.29428380899094 -2.6321203912116569 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "45774CEF-124C-0E45-8B4A-82B3A8586A66";
@@ -1895,7 +1897,7 @@ createNode transform -n "chair_chair5" -p "chairRNgroup";
 	setAttr ".t" -type "double3" -0.14153195272091523 -1.1857742779868372 5.3643067068201438 ;
 	setAttr -av ".tx";
 	setAttr -av ".tz";
-	setAttr ".s" -type "double3" 1.5026117154904866 1.6669843908767823 2.0818702209842064 ;
+	setAttr ".s" -type "double3" 1.5026117154904866 1.6669843908767823 1.8012809961051013 ;
 	setAttr -av ".sx";
 	setAttr -av ".sy";
 	setAttr -av ".sz";
@@ -6241,7 +6243,7 @@ createNode transform -n "chair_chair4" -p "chairRN1group";
 	setAttr ".t" -type "double3" -0.14153195272091523 -1.1857742779868372 5.3643067068201438 ;
 	setAttr -av ".tx";
 	setAttr -av ".tz";
-	setAttr ".s" -type "double3" 1.5026117154904866 1.6669843908767823 2.0818702209842064 ;
+	setAttr ".s" -type "double3" 1.5026117154904866 1.6669843908767823 1.8146201560007964 ;
 	setAttr -av ".sx";
 	setAttr -av ".sy";
 	setAttr -av ".sz";
@@ -10672,8 +10674,29 @@ createNode annotationShape -n "couchRNannotationShape" -p "couchRNannotation";
 	setAttr -k off ".v";
 	setAttr ".txt" -type "string" "couchRN";
 	setAttr ".daro" no;
+createNode transform -n "bowlRNlocator";
+	rename -uid "46154862-FD4F-B87B-5F7E-908DBFBB559E";
+	setAttr ".t" -type "double3" 0.017093187045300055 6.5554937582184696 -0.026321199861254172 ;
+	setAttr ".rp" -type "double3" -1.1920928955078125e-09 0.0044597490876913072 -1.7881393432617187e-09 ;
+	setAttr ".sp" -type "double3" -1.1920928955078125e-09 0.0044597490876913072 -1.7881393432617187e-09 ;
+createNode locator -n "bowlRNlocatorShape" -p "bowlRNlocator";
+	rename -uid "AC3619F2-A946-7FEC-B80C-39A9362B9E9B";
+	setAttr -k off ".v";
+	setAttr ".lp" -type "double3" -1.1920928955078125e-09 0.0044597490876913072 -1.7881393432617187e-09 ;
+createNode transform -n "bowlRNgroup" -p "bowlRNlocator";
+	rename -uid "E29224BF-704C-2C21-54FC-6589D37E6BEB";
+	setAttr ".rp" -type "double3" -1.1920928955078125e-09 0.0044597490876913072 -1.7881393432617187e-09 ;
+	setAttr ".sp" -type "double3" -1.1920928955078125e-09 0.0044597490876913072 -1.7881393432617187e-09 ;
+createNode transform -n "bowlRNannotation" -p "bowlRNlocator";
+	rename -uid "75197E42-3F4B-1346-D45C-F9870CA3C266";
+	setAttr ".t" -type "double3" -1.1920928955078125e-09 0.0044597490876913072 -1.7881393432617187e-09 ;
+createNode annotationShape -n "bowlRNannotationShape" -p "bowlRNannotation";
+	rename -uid "86AF6005-7B4B-7526-DFD3-5CBA8116E12B";
+	setAttr -k off ".v";
+	setAttr ".txt" -type "string" "bowlRN";
+	setAttr ".daro" no;
 createNode fosterParent -n "bookshelfRNfosterParent1";
-	rename -uid "947DEDF9-0D43-16C5-680F-1BA5FDAFAC93";
+	rename -uid "6EE1E528-0544-8946-BE0A-63BCD4623AC4";
 createNode transform -n "bookshelf_bookshelf1" -p "bookshelfRNfosterParent1";
 	rename -uid "004BAE2C-7A4C-F1AD-C817-808677938EBB";
 	setAttr ".t" -type "double3" 1.7427630117957205 0 2.9492618116867768 ;
@@ -11387,15 +11410,15 @@ createNode mesh -n "bookshelf_bookshelf1Shape" -p "bookshelf_bookshelf1";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "CBB3637B-9A48-2207-4847-42A78AA8EF67";
+	rename -uid "0B054161-0A45-9082-008A-47A7DF4B461E";
 	setAttr -s 25 ".lnk";
 	setAttr -s 25 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "BBB71DE9-CE4A-7F2F-079D-6180454DE87A";
+	rename -uid "9F5A0FFE-BB43-8CCC-FBE9-DCAED8DAC9AC";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "0CB80247-B445-30E0-D6C0-F4A893F557C2";
+	rename -uid "E79B6E16-4643-5029-BD97-908ACF168C02";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "DAA43033-C842-0C7C-D625-DA8E058A763B";
+	rename -uid "593BE878-844D-8C78-2096-A5BFE8B37F72";
 	setAttr ".cdl" 2;
 	setAttr -s 5 ".dli[1:4]"  1 2 0 3;
 	setAttr -s 3 ".dli";
@@ -11403,7 +11426,7 @@ createNode displayLayer -n "defaultLayer";
 	rename -uid "83A13CD2-0F42-2E81-2BF1-A5A83BCD462F";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "7E11270F-F044-2DD4-0F1B-44B87D0F3C99";
+	rename -uid "E3045E06-7343-9404-A22A-EBB201C150FC";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "F66DE107-CF4D-161E-567B-468144D830BD";
 	setAttr ".g" yes;
@@ -11778,7 +11801,7 @@ createNode reference -n "tableRN";
 		"tableRN" 2
 		2 "|tableRNlocator|tableRNgroup|table_table" "translate" " -type \"double3\" 0 0 1.0336448495952526"
 		
-		2 "|tableRNlocator|tableRNgroup|table_table" "scale" " -type \"double3\" 1.15582666570941228 1.15582666570941228 1.15582666570941228";
+		2 "|tableRNlocator|tableRNgroup|table_table" "scale" " -type \"double3\" 1.48158769102970611 1.15582666570941228 1.30492426578355136";
 	setAttr ".ptag" -type "string" "";
 	setAttr -s 3 ".asn";
 lockNode -l 1 ;
@@ -11837,7 +11860,9 @@ createNode reference -n "books3RN";
 	rename -uid "49C1D581-E244-9F71-9D11-A58CB5CD1B87";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"books3RN"
-		"books3RN" 0;
+		"books3RN" 0
+		"books3RN" 1
+		2 "|books3RNlocator|books3RNgroup|books3_book2" "translate" " -type \"double3\" 8.36930242614859843 1.81593063877068839 7.6568710104357125";
 	setAttr ".ptag" -type "string" "";
 	setAttr -s 3 ".asn";
 lockNode -l 1 ;
@@ -11869,6 +11894,24 @@ createNode reference -n "couchRN";
 	setAttr ".ptag" -type "string" "";
 	setAttr -s 3 ".asn";
 lockNode -l 1 ;
+createNode reference -n "bowlRN";
+	rename -uid "AB74FD82-B544-A898-57CC-22868EE9A0A3";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"bowlRN"
+		"bowlRN" 0
+		"bowlRN" 5
+		2 "|bowlRNlocator|bowlRNgroup|bowl_pSphere1" "translate" " -type \"double3\" -1.19366716703884457 0.42821236942940599 -0.85879863820902047"
+		
+		2 "|bowlRNlocator|bowlRNgroup|bowl_pSphere1" "scale" " -type \"double3\" 110.3940677738711571 110.3940677738711571 110.3940677738711571"
+		
+		2 "|bowlRNlocator|bowlRNgroup|bowl_pSphere1" "rotatePivot" " -type \"double3\" -0.67768778809083585 -0.85553781671820428 -0.49236893842332025"
+		
+		2 "|bowlRNlocator|bowlRNgroup|bowl_pSphere1" "scalePivot" " -type \"double3\" -0.0061388062035996087 -0.0077498531757220056 -0.0044601032315602085"
+		
+		2 "|bowlRNlocator|bowlRNgroup|bowl_pSphere1" "scalePivotTranslate" " -type \"double3\" -0.67154898188723622 -0.84778796354248231 -0.48790883519175998";
+	setAttr ".ptag" -type "string" "";
+	setAttr -s 3 ".asn";
+lockNode -l 1 ;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -11887,7 +11930,7 @@ select -ne :defaultShaderList1;
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderingList1;
-	setAttr -s 3 ".r";
+	setAttr -s 4 ".r";
 select -ne :standardSurface1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
@@ -11895,7 +11938,7 @@ select -ne :openPBR_shader1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
 select -ne :initialShadingGroup;
-	setAttr -s 64 ".dsm";
+	setAttr -s 65 ".dsm";
 	setAttr ".ro" yes;
 	setAttr -s 57 ".gn";
 select -ne :initialParticleSE;
@@ -12110,6 +12153,9 @@ connectAttr "books3RN1annotation.msg" "books3RN1.asn[2]";
 connectAttr "couchRNgroup.msg" "couchRN.asn[0]";
 connectAttr "f.msg" "couchRN.asn[1]";
 connectAttr "couchRNannotation.msg" "couchRN.asn[2]";
+connectAttr "bowlRNgroup.msg" "bowlRN.asn[0]";
+connectAttr "bowlRNlocator.msg" "bowlRN.asn[1]";
+connectAttr "bowlRNannotation.msg" "bowlRN.asn[2]";
 connectAttr "lambert2SG.pa" ":renderPartition.st" -na;
 connectAttr "lambert3SG.pa" ":renderPartition.st" -na;
 connectAttr "blinn1SG.pa" ":renderPartition.st" -na;
