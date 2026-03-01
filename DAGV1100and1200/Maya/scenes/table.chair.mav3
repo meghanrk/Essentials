@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: table.chair.mav3
-//Last modified: Sun, Mar 01, 2026 02:00:43 PM
+//Last modified: Sun, Mar 01, 2026 02:04:38 PM
 //Codeset: UTF-8
 file -rdi 1 -rpr "table" -rfn "tableRN" -op "v=0;" -typ "mayaAscii" "/Users/megha/Projects/Essentials/DAGV1100and1200/Maya//assets/table.ma";
 file -rdi 1 -rpr "chair" -rfn "chairRN" -op "v=0;" -typ "mayaAscii" "/Users/megha/Projects/Essentials/DAGV1100and1200/Maya//assets/chair.ma";
@@ -31,12 +31,12 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202510291147-60ec9eda33";
 fileInfo "osv" "Mac OS X 20.3";
-fileInfo "UUID" "2D02B920-734A-93EC-6865-869B94920A6F";
+fileInfo "UUID" "85910540-FA42-7657-4CAA-9B80F983663A";
 createNode transform -s -n "persp";
 	rename -uid "6DB37E52-6F46-7C27-F8E6-B88D37EEA211";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -11.714934184717141 31.839165926175728 -12.367552134948237 ;
-	setAttr ".r" -type "double3" -54.338352734955734 224.19999999998421 0 ;
+	setAttr ".t" -type "double3" -17.022370004281953 12.148519431028149 -11.815388964269948 ;
+	setAttr ".r" -type "double3" -13.538352734953131 235.3999999999819 0 ;
 	setAttr ".rp" -type "double3" 1.4210854715202004e-16 0 0 ;
 	setAttr ".rpt" -type "double3" -1.0724827093846768e-16 7.8886090522101182e-33 1.3776647021671398e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
@@ -46,7 +46,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".ncp" 0.001;
 	setAttr ".fcp" 100;
 	setAttr ".fd" 0.05;
-	setAttr ".coi" 30.628371863675103;
+	setAttr ".coi" 22.187921133873193;
 	setAttr ".ow" 0.1;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
@@ -10696,7 +10696,7 @@ createNode annotationShape -n "bowlRNannotationShape" -p "bowlRNannotation";
 	setAttr ".txt" -type "string" "bowlRN";
 	setAttr ".daro" no;
 createNode fosterParent -n "bookshelfRNfosterParent1";
-	rename -uid "6EE1E528-0544-8946-BE0A-63BCD4623AC4";
+	rename -uid "CE1C88F0-E043-518F-C202-6C936F5A83F9";
 createNode transform -n "bookshelf_bookshelf1" -p "bookshelfRNfosterParent1";
 	rename -uid "004BAE2C-7A4C-F1AD-C817-808677938EBB";
 	setAttr ".t" -type "double3" 1.7427630117957205 0 2.9492618116867768 ;
