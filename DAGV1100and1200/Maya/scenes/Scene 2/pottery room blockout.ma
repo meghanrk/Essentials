@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: pottery room blockout.ma
-//Last modified: Wed, Apr 08, 2026 11:12:45 PM
+//Last modified: Wed, Apr 08, 2026 11:18:47 PM
 //Codeset: UTF-8
 file -rdi 1 -rpr "cubbies_scene2" -rfn "cubbies_scene2RN" -op "v=0;" -typ "mayaAscii"
 		 "/Users/megha/Projects/Essentials/DAGV1100and1200/Maya/scenes//cubbies_scene2.ma";
@@ -16,12 +16,12 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202510291147-60ec9eda33";
 fileInfo "osv" "Mac OS X 20.3.1";
-fileInfo "UUID" "B6448970-B44B-3852-ECBA-7D906A3C9C88";
+fileInfo "UUID" "28156517-A64E-26BE-3EE5-59A303F967F4";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "15815E87-4730-DBDE-4CA7-A1A9AA93E4D1";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 1.2189454380485794 3.1320980440952519 -5.2322411107167772 ;
+	setAttr ".t" -type "double3" 0.22124442753334717 2.5124706949079125 -5.4589132189196068 ;
 	setAttr ".r" -type "double3" -31.200000000000312 77.200000000000216 0 ;
 	setAttr ".rp" -type "double3" 5.5511151231257827e-17 2.2204460492503131e-16 7.1054273576010019e-15 ;
 	setAttr ".rpt" -type "double3" -1.440097469112005e-14 1.2682701719771691e-16 1.1525053558100153e-14 ;
@@ -29,7 +29,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "C9565EF0-4209-15FC-E55D-2E9349740A98";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 6.9861616815508469;
+	setAttr ".coi" 5.7900322559111492;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
