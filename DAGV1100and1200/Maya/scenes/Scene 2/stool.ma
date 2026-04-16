@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: stool.ma
-//Last modified: Thu, Apr 16, 2026 05:26:27 PM
+//Last modified: Thu, Apr 16, 2026 05:27:34 PM
 //Codeset: UTF-8
 requires maya "2026";
 requires "mtoa" "5.5.4.2";
@@ -10,17 +10,17 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202510291147-60ec9eda33";
 fileInfo "osv" "Mac OS X 20.3.1";
-fileInfo "UUID" "4F64F825-4B4E-8644-7C27-1FAA856E1818";
+fileInfo "UUID" "A1A71C72-E54A-8780-8ABE-18AB8E785228";
 createNode transform -s -n "persp";
 	rename -uid "CD45D8BF-AF45-D0FA-9FE5-FF8552DF4DA4";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -0.43459550149596504 1.0868063341219421 -5.99323339002851 ;
-	setAttr ".r" -type "double3" 4.461647270159073 1483.3999999999423 -8.2077455573408496e-16 ;
+	setAttr ".t" -type "double3" -1.1340551611772793 2.2265132344530971 -6.0960552803846211 ;
+	setAttr ".r" -type "double3" -38.738352729843051 1484.9999999999384 6.7469753495851608e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "A6EB9C8D-744E-7407-F3DE-5E914B4CACC1";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 1.7557062402897206;
+	setAttr ".coi" 1.6389128628297085;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -808,20 +808,20 @@ createNode mesh -n "pPipe3Shape" -p "pPipe3";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "79CB8029-6247-4918-DE19-A4916501850A";
+	rename -uid "220E951B-F447-8885-7F63-6B9D07423BEA";
 	setAttr -s 3 ".lnk";
 	setAttr -s 3 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "0DEF0FE8-6045-979C-C476-2888B7886CDB";
+	rename -uid "C5897991-5D43-09C5-9049-3B9E02559A0E";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "896A8B03-B14B-A57B-CEA9-9493A2EF953F";
+	rename -uid "43A263C3-5F48-4063-5FA6-CF81C5D734D4";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "22D8DBA9-3C42-FB4C-3AE4-FE8433482982";
+	rename -uid "F389F879-614C-AE80-D75B-5DA2DE8C6BDE";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "13E04F3B-C44C-1B8C-6B7E-C5A3569DD43A";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "A5B66511-ED4A-1BB9-D9D2-EBA5655031D3";
+	rename -uid "6D8F90AE-1F42-8820-EBDF-7591B3042E70";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "2804DCEC-1340-8902-8E04-1BAC95FDAB2D";
 	setAttr ".g" yes;
@@ -1343,8 +1343,6 @@ select -ne :defaultColorMgtGlobals;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
-select -ne :ikSystem;
-	setAttr -s 4 ".sol";
 connectAttr "groupId1.id" "pPipeShape1.iog.og[0].gid";
 connectAttr ":initialShadingGroup.mwc" "pPipeShape1.iog.og[0].gco";
 connectAttr "groupParts1.og" "pPipeShape1.i";
